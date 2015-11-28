@@ -1,0 +1,92 @@
+<modification>
+	<id>Footer </id>
+	<version>1.0.0</version>
+	<vqmver>2.3.0</vqmver>
+	<author>Tm</author>
+	<file name="catalog/controller/common/footer.php">
+		<operation error="skip">
+			<search position="after"><![CDATA[ $this->data['text_newsletter'] = $this->language->get('text_newsletter'); ]]></search>
+			<add><![CDATA[ 
+			$this->data['text_account'] = $this->language->get('text_account');
+			$this->data['text_follow'] = $this->language->get('text_follow');
+			$this->data['text_support'] = $this->language->get('text_support');
+			$this->data['text_twi'] = $this->language->get('text_twi');
+			$this->data['text_fb'] = $this->language->get('text_fb');
+			$this->data['text_rss'] = $this->language->get('text_rss');
+			$this->data['text_yt'] = $this->language->get('text_yt');
+			$this->data['telephone_tx'] = $this->language->get('telephone_tx');
+			$this->data['email_tx'] = $this->language->get('email_tx');
+			]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="after"><![CDATA[ $this->data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL'); ]]></search>
+			<add><![CDATA[ 
+			$this->data['address'] = nl2br($this->config->get('config_address'));
+			$this->data['telephone'] = $this->config->get('config_telephone');
+			$this->data['fax'] = $this->config->get('config_fax');
+			$this->data['email'] = $this->config->get('config_email');
+			
+			$this->data['name'] = $this->config->get('config_name');
+			
+			if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+			$server = $this->config->get('config_ssl');
+			} else {
+				$server = $this->config->get('config_url');
+			}
+			if ($this->config->get('config_logo') && file_exists(DIR_IMAGE . $this->config->get('config_logo'))) {
+			$this->data['logo'] = $server . 'image/' . $this->config->get('config_logo');
+			} else {
+				$this->data['logo'] = '';
+			}	
+			
+			$this->data['home'] = $this->url->link('common/home');
+			
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/language/*/common/footer.php">
+		<operation error="skip">
+			<search position="after"><![CDATA[ $_['text_account']      = 'My Account'; ]]></search>
+			<add><![CDATA[ 
+				$_['text_follow']   = 'Follow Us';
+$_['text_support']   = 'Online support';
+$_['text_fb']   = 'Facebook';
+$_['text_twi']   = 'Twitter';
+$_['text_rss']   = 'RSS';
+$_['text_yt']   = 'You Tube';
+$_['telephone_tx']   = 'Call Us: ';
+$_['email_tx']   = 'Email ';
+				]]></add>
+		</operation>
+	</file>
+	<file name="catalog/language/german/common/footer.php">
+		<operation error="skip">
+			<search position="after"><![CDATA[ $_['text_wishlist']     = 'Wunschzettel'; ]]></search>
+			<add><![CDATA[ 
+				$_['text_follow']   = 'Folgen Sie uns';
+				$_['text_support']   = 'Online-Unterstutzung';
+				$_['text_fb']   = 'Facebook';
+				$_['text_twi']   = 'Twitter';
+				$_['text_rss']   = 'RSS';
+				$_['text_yt']   = 'You Tube';
+				$_['telephone_tx']   = 'Telefon Uns: ';
+				$_['email_tx']   = 'Email ';
+				]]></add>
+		</operation>
+	</file>
+	<file name="catalog/language/spanish/common/footer.php">
+		<operation error="skip">
+			<search position="after" ><![CDATA[ $_['text_wishlist']     = 'Lista de deseos'; ]]></search>
+			<add><![CDATA[ 
+				$_['text_follow']   = 'Siganos';
+				$_['text_support']   = 'El soporte en linea';
+				$_['text_fb']   = 'Facebook';
+				$_['text_twi']   = 'Twitter';
+				$_['text_rss']   = 'RSS';
+				$_['text_yt']   = 'You Tube';
+				$_['telephone_tx']   = 'Llamanos: ';
+				$_['email_tx']   = 'Email ';
+				]]></add>
+		</operation>
+	</file>
+</modification>
