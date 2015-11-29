@@ -289,6 +289,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 					<div class="row">
 						<div class="col-sm-12">
 							<ul  class="sf-menu">
+								<li class="cat_1"><a href="/" class="sf-with-ul">Home</a></li>
 								<?php $cv=0;?>
 								<?php foreach ($categories as $category) { $cv++; ?>
 								<?php if ($category['category_id'] == $category_id) { ?>
@@ -335,6 +336,9 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 								<?php } ?>
 								</li>
 								<?php } ?>
+								<li class="cat_1"><a href="/" class="sf-with-ul">Quem Somos</a></li>
+								<li class="cat_1"><a href="/" class="sf-with-ul">Formas de Pagamento</a></li>
+								<li class="cat_1"><a href="/" class="sf-with-ul">Contato</a></li>
 							</ul>
 							
 							<div class="clear"></div>
