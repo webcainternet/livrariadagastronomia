@@ -32,7 +32,7 @@ ul.sf-menu > li > a {
 }
 ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, ul.sf-menu > ul > li.active>a  {
 	color:#fff;
-	background:#61AF32;
+	background:#333333;
 	}
 .sf-menu .sf-mega {
 	display: none;
@@ -67,7 +67,7 @@ ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, u
 	border-top:none;
 	}
 .sf-mega-section >li a:hover, .sf-mega-section >li.sfHover>a, .sf-mega-section li a.current, .sf-mega-section li.current> a {
-	color:#61AF32
+	color:#333333
 	}
 .sf-mega-section >li a {
 	font-size:14px;
@@ -190,7 +190,7 @@ ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, u
 		width: 24px;
   }
   .sf-menu-phone li i:hover{
-		color:#61AF32;
+		color:#333333;
   }
   .sf-menu-phone  li  i {
 		top: 0;
@@ -221,7 +221,7 @@ ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, u
 		color: inherit;
 	}
   .sf-menu-phone  li.active > a, .sf-menu-phone  li:hover > a, .sf-menu-phone  li a.active {
-		color: #61AF32;
+		color: #333333;
 		background: #eceae9;
 	}
   

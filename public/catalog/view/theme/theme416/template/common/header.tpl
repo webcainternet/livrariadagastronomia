@@ -162,10 +162,10 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 			<div class="toprow">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12">
+						<div class="col-sm-12" style="text-align: right;">
 							<?php echo $currency; ?>
 							<?php echo $language; ?>
-							<ul class="social">
+							<ul class="social" style="display: none;">
 								<li><a class="tooltip-1" title="<?php echo $text_fb; ?>" href="http://facebook.com"><i class="fa  fa-twitter"></i></a></li>
 								<li><a class="tooltip-1" title="<?php echo $text_twi; ?>" href="http://twitter.com"><i class="fa  fa-facebook"></i></a></li>
 							</ul>
@@ -176,9 +176,9 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 								<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/cart") {echo "active";} ?>" href="<?php echo $shopping_cart; ?>"><i class="fa fa-shopping-cart"></i><?php echo $text_shopping_cart; ?></a></li>
 								<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/checkout") {echo "active";} ?>" href="<?php echo $checkout; ?>"><i class="fa fa-check"></i><?php echo $text_checkout; ?></a></li>
 								<?php if (!$logged) { ?>
-										<?php echo $text_welcome; ?>
+										<li style="text-align: right;"><?php echo $text_welcome; ?></li>
 										<?php } else { ?>
-										<?php echo $text_logged; ?>
+										<li style="text-align: right;"><?php echo $text_logged; ?></li>
 										<?php } ?>
 							</ul>
 							<div class="clear"></div>

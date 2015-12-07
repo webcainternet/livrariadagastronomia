@@ -381,7 +381,7 @@
 		line-height:26px;
 	}
 	.tabs .tab-heading:hover i{
-		color:#61AF32;
+		color:#333333;
 	}
 	#tab-review {
 		margin-bottom: 10px;
@@ -647,7 +647,7 @@
 	}
 	#search .button-search:hover {
 		color:#fff;
-		background:#61AF32;
+		background:#333333;
 	}
 	header #logo {
 		max-width: 100%;
@@ -696,7 +696,7 @@
 		color:#331f14;
 	}
 	.box-heading:hover i {
-		color:#61AF32;
+		color:#333333;
 	}
 	aside .box-product .name {
 		height:auto !important; 

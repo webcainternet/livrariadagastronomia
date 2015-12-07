@@ -1,4 +1,9 @@
-﻿<script type="text/javascript">
+﻿<style type="text/css">
+.product-grid .image, .product-list .image, .box-product .image2, .box-product .image {
+	height:440px;
+}
+</style>
+<script type="text/javascript">
 	if ($('body').width() > 767) {
 		(function($){$.fn.equalHeights=function(minHeight,maxHeight){tallest=(minHeight)?minHeight:0;this.each(function(){if($(this).height()>tallest){tallest=$(this).height()}});if((maxHeight)&&tallest>maxHeight)tallest=maxHeight;return this.each(function(){$(this).height(tallest)})}})(jQuery)
 	$(window).load(function(){
@@ -7,7 +12,7 @@
 	});
 	};
 </script>
-<div class="box featured"  style="float: left; width: 850px;">
+<div class="box featured" <?php /*  style="float: left; width: 850px;" */ ?>>
   <div class="box-heading"><?php echo $heading_title; ?></div>
   <div class="box-content">
 	<div class="box-product">
@@ -118,7 +123,12 @@
 									  <?php } else { ?>
 									  <span class="price-new"><?php echo $product['special']; ?></span><span class="price-old"><?php echo $product['price']; ?></span>
 									  <?php } ?>
-									  
+									  <div style="float: right;
+    background-color: #CC0033;
+    color: #FFF;
+    padding: 2px 8px;
+    margin-right: 5px;
+    font-size: 15px;">Comprar</div>
 									</div>
 									<?php } ?>
 								</div>
@@ -157,14 +167,20 @@
 				<div class="inner">
 					<div class="f-left">
 						
-						<div class="name maxheight-feat"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+						<div class="name maxheight-feat" style="text-align: left; max-height: 20px; overflow: overlay;"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
 						<?php if ($product['price']) { ?>
-						<div class="price">
+						<div class="price" style="text-align: left;">
 							<?php if (!$product['special']) { ?>
 							<?php echo $product['price']; ?>
 							<?php } else { ?>
 							<span class="price-new"><?php echo $product['special']; ?></span><span class="price-old"><?php echo $product['price']; ?></span>
 							<?php } ?>
+							<div style="float: right;
+    background-color: #CC0033;
+    color: #FFF;
+    padding: 2px 8px;
+    margin-right: 5px;
+    font-size: 15px;">Comprar</div>
 						</div>
 						<?php } ?>
 						
@@ -208,7 +224,7 @@
 </div>
 
 
-<div style="float: right; width: 300px;">
+<div style="float: right; width: 300px; display: none;">
 	<img src="http://www.livrariadagastronomia.com.br/img/cms/BOLO.jpg" width="300" height="250" alt="bolo" title="bolo"><br><br>
 	<img src="http://www.livrariadagastronomia.com.br/img/cms/20151002%20-%20LIVRARIA%20DA%20GASTRONOMIA%20-%20SITE%20-%20BANNER%20PARCEIROS%20-%20SALADA%20DE%20FRUTA%20COPO.jpg" width="300" height="250" alt="bolo" title="bolo"><br><br>
 	<img src="http://www.livrariadagastronomia.com.br/img/cms/20151002%20-%20LIVRARIA%20DA%20GASTRONOMIA%20-%20SITE%20-%20BANNER%20PARCEIROS%20-%20PAO%20E%20TRIGO.jpg" width="300" height="250" alt="bolo" title="bolo"><br><br>

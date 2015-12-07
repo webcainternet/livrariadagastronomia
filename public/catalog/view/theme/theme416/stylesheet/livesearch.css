@@ -33,11 +33,11 @@
     color: #fff;
 }
 #livesearch_search_results li:hover {
-    background-color: #61AF32;
+    background-color: #333333;
 }
 #livesearch_search_results .highlighted a {color:#fff}
 #livesearch_search_results .highlighted {
-    background-color: #61AF32;
+    background-color: #333333;
 }
 #livesearch_search_results li img {
 	overflow:hidden;
