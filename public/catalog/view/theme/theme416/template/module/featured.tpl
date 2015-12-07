@@ -10,7 +10,6 @@
 }
 .banner-inferior img {
 	border-top: solid 5px #C03;
-	margin-top: 20px;
 }
 </style>
 <script type="text/javascript">
@@ -234,7 +233,14 @@
 </div>
 
 
-<div>
+<div style="background-color: #FFF7F0;
+    height: 340px;
+    border-radius: 30px;
+    width: 1120px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 25px;
+    padding-top: 45px;">
 
 	<div class="banner-inferior">
 		<img src="http://www.livrariadagastronomia.com.br/img/cms/BOLO.jpg" width="300" height="250" alt="bolo" title="bolo">
