@@ -2,6 +2,16 @@
 .product-grid .image, .product-list .image, .box-product .image2, .box-product .image {
 	height:440px;
 }
+.banner-inferior {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.banner-inferior img {
+	border-top: solid 5px #C03;
+	margin-top: 20px;
+}
 </style>
 <script type="text/javascript">
 	if ($('body').width() > 767) {
@@ -224,10 +234,21 @@
 </div>
 
 
-<div style="float: right; width: 300px; display: none;">
-	<img src="http://www.livrariadagastronomia.com.br/img/cms/BOLO.jpg" width="300" height="250" alt="bolo" title="bolo"><br><br>
-	<img src="http://www.livrariadagastronomia.com.br/img/cms/20151002%20-%20LIVRARIA%20DA%20GASTRONOMIA%20-%20SITE%20-%20BANNER%20PARCEIROS%20-%20SALADA%20DE%20FRUTA%20COPO.jpg" width="300" height="250" alt="bolo" title="bolo"><br><br>
-	<img src="http://www.livrariadagastronomia.com.br/img/cms/20151002%20-%20LIVRARIA%20DA%20GASTRONOMIA%20-%20SITE%20-%20BANNER%20PARCEIROS%20-%20PAO%20E%20TRIGO.jpg" width="300" height="250" alt="bolo" title="bolo"><br><br>
+<div>
+
+	<div class="banner-inferior">
+		<img src="http://www.livrariadagastronomia.com.br/img/cms/BOLO.jpg" width="300" height="250" alt="bolo" title="bolo">
+	</div>
+
+	<div class="banner-inferior">
+		<img src="http://www.livrariadagastronomia.com.br/img/cms/20151002%20-%20LIVRARIA%20DA%20GASTRONOMIA%20-%20SITE%20-%20BANNER%20PARCEIROS%20-%20SALADA%20DE%20FRUTA%20COPO.jpg" width="300" height="250" alt="bolo" title="bolo">
+	</div>
+
+	<div class="banner-inferior">
+		<img src="http://www.livrariadagastronomia.com.br/img/cms/20151002%20-%20LIVRARIA%20DA%20GASTRONOMIA%20-%20SITE%20-%20BANNER%20PARCEIROS%20-%20PAO%20E%20TRIGO.jpg" width="300" height="250" alt="bolo" title="bolo">
+	</div>
+
+	<!-- 
 	<img src="http://www.livrariadagastronomia.com.br/img/cms/20151002%20-%20LIVRARIA%20DA%20GASTRONOMIA%20-%20SITE%20-%20BANNER%20PARCEIROS%20-%20SORVETE%20E%20FRUTAS%20AMARELA.jpg" width="300" height="250" alt="bolo" title="bolo"><br><br>
-	<img src="http://www.livrariadagastronomia.com.br/img/cms/20151002%20-%20LIVRARIA%20DA%20GASTRONOMIA%20-%20SITE%20-%20BANNER%20PARCEIROS%20-%20TORTA%20DE%20AMEIXA.jpg" width="300" height="250">
+	<img src="http://www.livrariadagastronomia.com.br/img/cms/20151002%20-%20LIVRARIA%20DA%20GASTRONOMIA%20-%20SITE%20-%20BANNER%20PARCEIROS%20-%20TORTA%20DE%20AMEIXA.jpg" width="300" height="250"> -->
 </div>
