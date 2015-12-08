@@ -312,42 +312,39 @@
 	</div>
   </div>
   </div>
-	<div class="tabs">
-		<div class="tab-heading">
-			<?php echo $tab_description; ?>
-		</div>
-		<div class="tab-content">
-			<?php echo $description; ?>
-		</div>
-	</div>
-	<?php if ($attribute_groups) { ?>
-	<div class="tabs">
-		<div class="tab-heading">
-			<?php echo $tab_attribute; ?>
-		</div>
-			
-			<div class="tab-content">
-				<table class="attribute table table-bordered" >
-				<?php foreach ($attribute_groups as $attribute_group) { ?>
-				<thead>
-					<tr>
-					<td colspan="2"><?php echo $attribute_group['name']; ?></td>
-					</tr>
-				</thead>
-				<tbody>
-					<?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-					<tr>
-					<td><?php echo $attribute['name']; ?></td>
-					<td><?php echo $attribute['text']; ?></td>
-					</tr>
-					<?php } ?>
-				</tbody>
-				<?php } ?>
-				</table>
-			
-		</div>
-	</div>
-	<?php } ?>
+	<div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
+    <?php if ($attribute_groups) { ?>
+    <a href="#tab-attribute"><?php echo $tab_attribute; ?></a>
+    <?php } ?>
+    <?php if ($review_status) { ?>
+    <a href="#tab-review"><?php echo $tab_review; ?></a>
+    <?php } ?>
+    <?php if ($products) { ?>
+    <a href="#tab-related"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a>
+    <?php } ?>
+  </div>
+  <div id="tab-description" class="tab-content"><?php echo $description; ?></div>
+  <?php if ($attribute_groups) { ?>
+  <div id="tab-attribute" class="tab-content">
+    <table class="attribute">
+      <?php foreach ($attribute_groups as $attribute_group) { ?>
+      <thead>
+        <tr>
+          <td colspan="2"><?php echo $attribute_group['name']; ?></td>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+        <tr>
+          <td><?php echo $attribute['name']; ?></td>
+          <td><?php echo $attribute['text']; ?></td>
+        </tr>
+        <?php } ?>
+      </tbody>
+      <?php } ?>
+    </table>
+  </div>
+  <?php } ?>
 	<?php if ($review_status) { ?>
 	<div class="tabs" id="tab-review">
 		<div class="tab-heading">
