@@ -177,7 +177,7 @@
 					<div class="f-left">
 						
 						<div class="name maxheight-feat" style="text-align: left; max-height: 20px; overflow: overlay;"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-						<?php if ($product['price']) { ?>
+						<?php if ($product['price'] && $product['price'] !=  "R$ 0,00") { ?>
 						<div class="price" style="text-align: left;">
 							<?php if (!$product['special']) { ?>
 							<?php echo $product['price']; ?>

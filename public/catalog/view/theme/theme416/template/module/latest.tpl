@@ -69,7 +69,7 @@ $('.new-products  li ').last().addClass('last');
 							<div class="f-left">
 						
 							<div class="name maxheight-feat"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-							<?php if ($product['price']) { ?>
+							<?php if ($product['price'] && $product['price'] !=  "R$ 0,00") { ?>
 							<div class="price">
 								<?php if (!$product['special']) { ?>
 								<?php echo $product['price']; ?>
