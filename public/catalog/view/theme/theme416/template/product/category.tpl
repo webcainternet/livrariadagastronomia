@@ -108,7 +108,7 @@
 	  
 		<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
 		<div class="description"><?php echo $product['description']; ?></div>
-		<?php if ($product['price']) { ?>
+		<?php if ($product['price'] && $product['price'] !=  "R$ 0,00") { ?>
 		<div class="price">
 		<?php if ($product['tax']) { ?>
 		<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>

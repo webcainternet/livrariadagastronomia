@@ -76,8 +76,18 @@
 			<?php } ?>
 			<span><?php echo $text_stock; ?></span><div class="prod-stock"><?php echo $stock; ?></div>
 		</div>
-		
-	  <?php if ($price) { ?>
+
+	<?php if ($price ==  "R$ 0,00") { ?>
+	  <style type="text/css">
+		.cart, .product-section {
+			display: none;
+		}
+	</style>
+	<?php } ?>
+
+	  <?php if ($price  && $price !=  "R$ 0,00") { ?>
+
+
 	  <div class="price">
 		<span class="text-price"><?php echo $text_price; ?></span>
 		<?php if (!$special) { ?>
@@ -423,7 +433,7 @@
 			</div>
 			<?php } ?>
 			<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-			<?php if ($product['price']) { ?>
+			<?php if ($product['price'] && $product['price'] !=  "R$ 0,00") { ?>
 				<div class="price">
 				<?php if (!$product['special']) { ?>
 				<?php echo $product['price']; ?>
