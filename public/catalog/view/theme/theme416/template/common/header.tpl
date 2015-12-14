@@ -176,9 +176,9 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 								<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/cart") {echo "active";} ?>" href="<?php echo $shopping_cart; ?>"><i class="fa fa-shopping-cart"></i><?php echo $text_shopping_cart; ?></a></li>
 								<li><a class="<?php if (isset($this->request->get['route']) && $this->request->get['route']=="checkout/checkout") {echo "active";} ?>" href="<?php echo $checkout; ?>"><i class="fa fa-check"></i><?php echo $text_checkout; ?></a></li>
 								<?php if (!$logged) { ?>
-										<li style="text-align: right;"><?php echo $text_welcome; ?></li>
+										<li style="float: right;"><?php echo $text_welcome; ?></li>
 										<?php } else { ?>
-										<li style="text-align: right;"><?php echo $text_logged; ?></li>
+										<li style="float: right;"><?php echo $text_logged; ?></li>
 										<?php } ?>
 							</ul>
 							<div class="clear"></div>

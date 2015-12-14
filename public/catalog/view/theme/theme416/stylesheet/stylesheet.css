@@ -3712,7 +3712,7 @@ td.image {
 }
 .box-product .quick-view-button, .box-product .details, .product-grid .details{
 	position: relative;
-	display:inline-block;
+	display: none;
 	font-size:26px;
 	color:#fff;
 	background:none;
