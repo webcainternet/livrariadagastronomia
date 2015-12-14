@@ -184,12 +184,12 @@
 							<?php } else { ?>
 							<span class="price-new"><?php echo $product['special']; ?></span><span class="price-old"><?php echo $product['price']; ?></span>
 							<?php } ?>
-							<div style="float: right;
+							<a href="<?php echo $product['href']; ?>"><div style="float: right;
     background-color: #CC0033;
     color: #FFF;
     padding: 2px 8px;
     margin-right: 5px;
-    font-size: 15px;">Comprar</div>
+    font-size: 15px;">Comprar</div></a>
 						</div>
 						<?php } ?>
 						
