@@ -3881,3 +3881,7 @@ z-index:8;
 	background: red;
     color: #FFF;
 }
+
+.extra-button {
+	display: none;
+}
