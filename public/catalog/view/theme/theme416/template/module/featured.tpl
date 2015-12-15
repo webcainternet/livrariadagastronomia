@@ -22,7 +22,7 @@
 	};
 </script>
 <div class="box featured" <?php /*  style="float: left; width: 850px;" */ ?>>
-  <div class="box-heading"><?php echo $heading_title; ?></div>
+  <?php /* <div class="box-heading"><?php echo $heading_title; ?></div> */ ?>
   <div class="box-content">
 	<div class="box-product">
 		<ul class="row">
