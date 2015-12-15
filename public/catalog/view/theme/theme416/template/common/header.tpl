@@ -205,8 +205,8 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 							<div class="cart-inner"><?php echo $cart; ?></div>
 						</div>
 						<div class="header-block">
-							<div class="phone">
-								<span><?php echo $telephone_tx; ?></span>
+							<div class="phone" style="font-size: 22px; margin-right: 4px;">
+								<img src="/image/phone.png" height="28">
 								<?php echo $telephone; ?>
 							</div>	
 							<div class="clear"></div>
