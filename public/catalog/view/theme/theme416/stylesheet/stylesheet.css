@@ -3698,6 +3698,7 @@ td.image {
 .box-product ul li .image2, .box-product ul li .image, .product-grid .image{
 	overflow:hidden;
 	margin-bottom:10px;
+	height: 450px;
 }
 /*
 .image2:hover {
