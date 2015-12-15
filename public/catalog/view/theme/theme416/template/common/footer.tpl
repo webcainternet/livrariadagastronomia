@@ -40,7 +40,7 @@
 				<li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
 				</ul>
 			</div>			
-			<div class="col-sm-3">
+			<div class="col-sm-3" style="display: block;">
 				<?php if ($logo) { ?>
 					<div id="logo-f"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 				<?php } ?>

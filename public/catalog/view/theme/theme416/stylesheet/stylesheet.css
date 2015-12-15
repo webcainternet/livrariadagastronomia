@@ -1423,7 +1423,7 @@ a.button-i i:hover {
 	vertical-align:top;
 }
 .box-product .image a{
-	background:#F5F4F3;
+	/* background:#F5F4F3; */
 	}
 .product-grid .image, .product-list .image, .box-product .image2, .box-product .image {
 	
@@ -1452,9 +1452,6 @@ a.button-i i:hover {
 	overflow:hidden;
 }
 .related .box-product .image a img{
-	border-radius:170px;
-	-moz-border-radius:170px;
-	-webkit-border-radius:170px;
 	overflow:hidden;
 }
 .cart-button {
