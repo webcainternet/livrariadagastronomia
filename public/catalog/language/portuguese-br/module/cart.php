@@ -8,4 +8,5 @@ $_['text_empty']           = 'Você ainda não adicionou produtos.';
 $_['text_cart']            = 'Ver Carrinho';
 $_['text_checkout']        = 'Finalizar Pedido';
 $_['text_payment_profile'] = 'Assinatura';
+$_['text_latest_added'] = 'Últimos adicionados';
 ?>

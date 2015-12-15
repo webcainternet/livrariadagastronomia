@@ -9,4 +9,5 @@ $_['text_logged']        = 'Você acessou como <a href="%s">%s</a> <b>(</b> <a h
 $_['text_account']       = 'Minha Conta';
 $_['text_checkout']      = 'Finalizar Pedido';
 $_['telephone_tx']      = 'Tel. ';
+$_['text_latest_added'] = 'Últimos adicionados';
 ?>
