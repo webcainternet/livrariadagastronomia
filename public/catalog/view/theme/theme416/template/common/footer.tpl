@@ -48,7 +48,9 @@
 					<div class="extra-wrap">
 						<div><?php echo $address; ?></div>
 						<div class="phone"><span><?php echo $telephone_tx; ?></span><?php echo $telephone; ?></div>
-						<div class="email"><span><?php echo $email_tx; ?></span><?php echo $email; ?></div>						
+						<div class="email"><span><?php echo $email_tx; ?></span><?php echo $email; ?></div>
+						<div>Rocha & Molinário Comércio Eletrônico Ltda</div>
+						<div>CNPJ: 65.897.134/00001-00</div>
 					</div>
 				</div>
 				<ul>
