@@ -114,19 +114,25 @@
 		
 		</div></div>
 	  
-		<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-		<div class="description"><?php echo $product['description']; ?></div>
-		<?php if ($product['price'] && $product['price'] !=  "R$ 0,00") { ?>
-		<div class="price">
-		<?php if ($product['tax']) { ?>
-		<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-		<?php } ?>
-		<?php if (!$product['special']) { ?>
-		<?php echo $product['price']; ?>
-		<?php } else { ?><span class="price-new"><?php echo $product['special']; ?></span>
-		<span class="price-old"><?php echo $product['price']; ?></span> 
-		<?php } ?>
+	  	<div style="float: left; width: 100%; text-align: left;  max-height: 20px;  overflow: overlay;">
+			<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
 		</div>
+
+
+		<?php if ($product['price'] && $product['price'] !=  "R$ 0,00") { ?>
+			<div class="price">
+									  <?php if (!$product['special']) { ?>
+									  <span style="float: left;"><?php echo $product['price']; ?></span>
+									  <?php } else { ?>
+									  <span class="price-new"><?php echo $product['special']; ?></span><span class="price-old"><?php echo $product['price']; ?></span>
+									  <?php } ?>
+									  <div style="float: right;
+    background-color: #CC0033;
+    color: #FFF;
+    padding: 2px 8px;
+    margin-right: 5px;
+    font-size: 15px;">Comprar</div>
+									</div>
 		<?php } ?>
 		
 		<?php if ($product['rating']) { ?><div class="rating">
@@ -170,7 +176,7 @@ function display(view) {
 				html += '</div>';
 			}
 			html += '<div class="left col-sm-8">';
-				html += '<div class="name">' + $(element).find('.name').html() + '</div>';
+				html += '<div style="float: left; width: 100%; text-align: left;  max-height: 20px;  overflow: overlay;"><div class="name">' + $(element).find('.name').html() + '</div></div>';
 				html += '<div class="description">' + $(element).find('.description').html() + '</div>';
 				var price = $(element).find('.price').html();
 				if (price != null) {
@@ -212,7 +218,7 @@ function display(view) {
 			}
 			html += '<div class="left">';
 			
-			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
+			html += '<div style="float: left; width: 100%; text-align: left;  max-height: 20px;  overflow: overlay;"><div class="name">' + $(element).find('.name').html() + '</div></div>';
 			var price = $(element).find('.price').html();
 			
 			if (price != null) {
