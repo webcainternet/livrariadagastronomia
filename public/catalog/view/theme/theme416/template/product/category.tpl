@@ -6,6 +6,12 @@
 	.col-sm-9 {
 		width: 100%;
 	}
+	.box-product ul li .image2, .box-product ul li .image, .product-grid .image{
+		height: 450px;
+	}
+	.product-grid .image, .product-list .image, .box-product .image2, .box-product .image {
+		height:440px;
+	}
 </style>
 <?php echo $column_left; ?>
 		<div class="<?php if ($column_left or $column_right) { ?>col-sm-9<?php } ?> <?php if (!$column_left & !$column_left) { ?>col-sm-12  <?php } ?> <?php if ($column_left & $column_right) { ?>col-sm-6<?php } ?>" id="content"><?php echo $content_top; ?>
