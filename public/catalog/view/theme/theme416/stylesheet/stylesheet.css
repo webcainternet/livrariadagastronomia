@@ -2247,15 +2247,15 @@ h1.style-1 {
 .product-info .image {
 	float: left;
 	width:100%;
-	max-width:270px;
-	max-height:424px;
+	max-width:570px;
+	max-height:698px;
 	height:100%;
 	margin-bottom:7px;
 	border: solid 1px #f5f4f3;
 }
 .product-info .image-additional {
 	overflow:hidden;
-	max-width:270px;
+	max-width:570px;
 	position:relative;
 	clear: both;
 	padding:0 20px;
@@ -3878,10 +3878,21 @@ z-index:8;
 }
 
 .selected {
-	background: red;
+	background: #CC0033;
     color: #FFF;
+}
+
+.selected:hover {
+	background: #929124;
+	color: #FFF;
 }
 
 .extra-button {
 	display: none;
+}
+
+.tab-content {
+	font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 22px !important;
+    line-height: 25px !important;
 }

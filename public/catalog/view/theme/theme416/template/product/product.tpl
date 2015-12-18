@@ -1,4 +1,23 @@
 <?php echo $header; ?>
+
+<style type="text/css">
+.col-sm-3 {
+    display: none;
+}
+.col-sm-9 {
+    width: 100%;
+}
+.col-sm-4 {
+    width: 50%;
+}
+.col-sm-8 {
+    width: 50%;
+}
+a.button, a.button-prod {
+	background: #929124;
+}
+</style>
+
 <?php echo $column_left; ?>
 		<div class="<?php if ($column_left or $column_right) { ?>col-sm-9<?php } ?> <?php if (!$column_left & !$column_left) { ?>col-sm-12  <?php } ?> <?php if ($column_left & $column_right) { ?>col-sm-6<?php } ?>" id="content"><?php echo $content_top; ?>
 	<div class="breadcrumb">
@@ -82,6 +101,10 @@
 			<span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
 			<?php } ?>
 			<span><?php echo $text_stock; ?></span><div class="prod-stock"><?php echo $stock; ?></div>
+
+			<?php if ($product_info['isbn']) { ?>
+				<div style="margin-top: 5px;"><span>ISBN: <?php echo $product_info['isbn']; ?></span></div>
+			<?php } ?>
 		</div>
 
 	<?php if ($price ==  "R$ 0,00") { ?>
@@ -337,7 +360,7 @@
     <a href="#tab-review"><?php echo $tab_review; ?></a>
     <?php } ?>
     <?php if ($products) { ?>
-    <a href="#tab-related"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a>
+    <?php /* <a href="#tab-related"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a> */ ?>
     <?php } ?>
   </div>
   <div id="tab-description" class="tab-content"><?php echo $description; ?></div>

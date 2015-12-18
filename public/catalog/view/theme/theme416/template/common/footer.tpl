@@ -64,8 +64,11 @@
 	<div id="copyright">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">				
-					<?php echo $powered; ?><!-- [[%FOOTER_LINK]] -->
+				<div class="col-sm-12" style="float: left; width: 35%;">
+					<div style="padding-top: 15px;"><?php echo $powered; ?><!-- [[%FOOTER_LINK]] --></div>
+				</div>
+				<div class="col-sm-12" style="float: left; width: 65%; text-align: right;">
+					<img src="/image/pagseguro.png" width="400" style="width: 400px; margin-top: 5px;">
 				</div>
 			</div>
 		</div>

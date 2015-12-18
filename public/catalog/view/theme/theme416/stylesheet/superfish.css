@@ -32,7 +32,7 @@ ul.sf-menu > li > a {
 }
 ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, ul.sf-menu > ul > li.active>a  {
 	color:#fff;
-	background:#333333;
+	background:#929124;
 	}
 .sf-menu .sf-mega {
 	display: none;
