@@ -233,7 +233,7 @@
 </div>
 
 
-<div style="background-color: #FFF7F0;
+<div style="background-color: #FFF7F0; display: none;
     height: 340px;
     border-radius: 30px;
     width: 1120px;
