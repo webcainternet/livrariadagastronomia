@@ -117,6 +117,8 @@
 
 
 <script type="text/javascript">
-  document.getElementById("shipping_address_country_id").selectedIndex = 30;
-  alert('Selecionado brasil');
+$(document).ready(function(){
+    $('#shipping_address_country_id').val(30).change();
+}); 
+
 </script>
