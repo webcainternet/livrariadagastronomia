@@ -1,12 +1,11 @@
 <tr>
-  <td class="simplecheckout-table-form-left">
-    <?php if ($label == "País") { echo "2222"; } ?>
+  <td class="simplecheckout-table-form-left" style="<?php if ($label == "País") { echo "display: none;"; } ?>">
     <?php if ($required) { ?>
       <span class="simplecheckout-required">*</span>
     <?php } ?>
     <?php echo $label ?>
   </td>
-  <td class="simplecheckout-table-form-right">
+  <td class="simplecheckout-table-form-right" style="<?php if ($label == "País") { echo "display: none;"; } ?>">
     <?php if ($type == 'select') { ?>
       <select name="<?php echo $name ?>" id="<?php echo $id ?>" <?php echo $reload ? 'data-onchange="reloadAll"' : ''?>>
         <?php foreach ($values as $info) { ?>
