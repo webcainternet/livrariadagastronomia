@@ -1,5 +1,6 @@
 <tr>
   <td class="simplecheckout-table-form-left">
+    <?php if ($label == "País") { echo "2222"; } ?>
     <?php if ($required) { ?>
       <span class="simplecheckout-required">*</span>
     <?php } ?>
