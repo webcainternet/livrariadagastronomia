@@ -1,5 +1,5 @@
----------- Date: 2015-12-14 07:34:03 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&amp;path=12&amp;product_id=369
+---------- Date: 2015-12-21 11:02:24 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /aaaaa
 MOD DETAILS:
    modFile   : /Users/fernandomendes/github/livrariadagastronomia/public/vqmod/xml/extra_product_tab_catalog.xml
    id        : Additional Product Tabs
@@ -16,62 +16,8 @@ VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div id="tab-related" class=
 ----------------------------------------------------------------------
 
 
----------- Date: 2015-12-14 07:34:25 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&amp;path=12&amp;product_id=369
-MOD DETAILS:
-   modFile   : /Users/fernandomendes/github/livrariadagastronomia/public/vqmod/xml/extra_product_tab_catalog.xml
-   id        : Additional Product Tabs
-   version   : 1.0.3
-   vqmver    : 2.2.1
-   author    : Godfrey Livinstone
-
-File Name    : catalog/view/theme/*/template/product/product.tpl(7)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div id="tab-review" class="tab-content">
-
-File Name    : catalog/view/theme/*/template/product/product.tpl(8)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div id="tab-related" class="tab-content">
-
-----------------------------------------------------------------------
-
-
----------- Date: 2015-12-14 07:34:55 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&amp;path=12&amp;product_id=369
-MOD DETAILS:
-   modFile   : /Users/fernandomendes/github/livrariadagastronomia/public/vqmod/xml/extra_product_tab_catalog.xml
-   id        : Additional Product Tabs
-   version   : 1.0.3
-   vqmver    : 2.2.1
-   author    : Godfrey Livinstone
-
-File Name    : catalog/view/theme/*/template/product/product.tpl(7)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div id="tab-review" class="tab-content">
-
-File Name    : catalog/view/theme/*/template/product/product.tpl(8)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div id="tab-related" class="tab-content">
-
-----------------------------------------------------------------------
-
-
----------- Date: 2015-12-14 07:35:11 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&amp;path=12&amp;product_id=369
-MOD DETAILS:
-   modFile   : /Users/fernandomendes/github/livrariadagastronomia/public/vqmod/xml/extra_product_tab_catalog.xml
-   id        : Additional Product Tabs
-   version   : 1.0.3
-   vqmver    : 2.2.1
-   author    : Godfrey Livinstone
-
-File Name    : catalog/view/theme/*/template/product/product.tpl(7)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div id="tab-review" class="tab-content">
-
-File Name    : catalog/view/theme/*/template/product/product.tpl(8)
-VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <div id="tab-related" class="tab-content">
-
-----------------------------------------------------------------------
-
-
----------- Date: 2015-12-14 07:35:48 ~ IP : 127.0.0.1 ----------
-REQUEST URI : /index.php?route=product/product&amp;path=12&amp;product_id=369
+---------- Date: 2015-12-21 11:03:39 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /index.php?route=product/product&amp;path=12&amp;product_id=368
 MOD DETAILS:
    modFile   : /Users/fernandomendes/github/livrariadagastronomia/public/vqmod/xml/extra_product_tab_catalog.xml
    id        : Additional Product Tabs
