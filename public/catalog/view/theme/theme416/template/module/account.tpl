@@ -12,9 +12,7 @@
       <li><a href="<?php echo $password; ?>"><?php echo $text_password; ?></a></li>
       <?php } ?>
       <?php if (isset($address)) : ?><li><a href="<?php echo $address; ?>"><?php echo $text_address; ?></a></li><?php  endif;  ?>
-      <li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
       <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-      <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
       <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
       <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
       <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
