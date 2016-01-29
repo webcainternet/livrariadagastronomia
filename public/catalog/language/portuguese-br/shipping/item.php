@@ -1,5 +1,5 @@
 <?php
 // Text
-$_['text_title']       = 'Frete por Itens';
-$_['text_description'] = 'Valor total baseado na quantidade de itens do pedido.';
+$_['text_title']       = 'Frete Customizado Livraria da Gastronomia';
+$_['text_description'] = 'Mala Direta Postal';
 ?>
