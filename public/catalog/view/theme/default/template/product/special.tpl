@@ -145,7 +145,7 @@ function display(view) {
 			$(element).html(html);
 		});	
 					
-		$('.display').html('<b><?php echo $text_display; ?></b> <a onclick="display(\'list\');"><?php echo $text_list; ?></a> <b>/</b> <?php echo $text_grid; ?>');
+		$('.display').html('<b><?php echo $text_display; ?></b>  <b>/</b> <?php echo $text_grid; ?>');
 		
 		$.totalStorage('display', 'grid');
 	}
