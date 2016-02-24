@@ -3863,6 +3863,7 @@ table.radio {
 }
 .zoomContainer {
 z-index:8;
+display: none;  
 }
 .wishlist {
 	display: none;
