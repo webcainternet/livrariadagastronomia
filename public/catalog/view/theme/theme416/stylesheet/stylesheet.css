@@ -3902,5 +3902,5 @@ display: none;
 
 /* Removido ver em lista */
 .fa-list {
-	display: none;
+	display: none !important;
 }
