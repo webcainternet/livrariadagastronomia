@@ -299,6 +299,37 @@ a.button, a.button-prod {
 		<?php } ?>
 	  </div>
 	  <?php } ?>
+
+
+	  <?php if ($product_info['quantity'] < 1) { ?>
+		<?php if ($product_info['stock_status'] == 'Encomendar') { ?>
+			<div class="cart" style="    border-bottom: 1px solid #e6e6e6; margin-bottom: 20px;">
+				<span style="color: #C75758;
+    font-size: 31px;
+    font-weight: bold;">Disponível sob encomenda</span><br>
+				Encomende via telefone: <span style="color: #C75758; font-size: 18px; font-weight: bold;">(11) 4107-0500</span> ou
+				<a style="margin: 15px 0px 15px 5px;" id="btencomendar" class="button"><span>Encomendar via chat</span></a>
+
+				<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btencomendar").click(function(){
+						    $zopim.livechat.window.show();
+					});
+				});
+				</script>
+			</div>
+		<?php } ?>
+
+		<?php if ($product_info['stock_status'] == 'Produto indisponível') { ?>
+			<div class="cart" style="padding-bottom: 20px;     border-bottom: 1px solid #e6e6e6; margin-bottom: 20px;">
+				<span style="color: #C75758;
+    font-size: 31px;
+    font-weight: bold;">Produto indisponível</span><br>
+			</div>
+		<?php } ?>
+
+	<?php } else { ?>
+
 	  <div class="cart">
 		<div class="prod-row">
 			<div class="cart-top">
@@ -324,6 +355,9 @@ a.button, a.button-prod {
 			</div>
 		</div>
 		</div>
+
+	<?php } ?>
+
 		<div class="clear"></div>
 		<?php if ($review_status) { ?>
 		<div class="review">
