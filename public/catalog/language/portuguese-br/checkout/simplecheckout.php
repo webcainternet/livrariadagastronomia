@@ -13,7 +13,7 @@ $_['text_cart']                      = 'Carrinho de compras';
 $_['text_checkout_customer']         = 'Já sou cliente';
 $_['text_checkout_customer_login']   = 'Clique aqui para Logar';
 $_['text_checkout_customer_cancel']  = 'Cancelar';
-$_['text_checkout_shipping_method']  = 'Forma de Envio';
+$_['text_checkout_shipping_method']  = 'Forma de Envio<br><span style="font-size: 12px;">Preencha o CEP para mais opções</span>';
 $_['text_checkout_payment_method']   = 'Forma de Pagamento';
 $_['text_city']                      = 'Escreva a sua cidade e selecione-a na lista';
 $_['text_shipping_address']          = 'Insira seu endereço para obter as formas de envio';
