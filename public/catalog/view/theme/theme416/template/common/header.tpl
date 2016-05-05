@@ -337,9 +337,9 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 								<?php } ?>
 								</li>
 								<?php } ?>
-								<li class="cat_1"><a href="/" class="sf-with-ul">Quem Somos</a></li>
-								<li class="cat_1"><a href="/" class="sf-with-ul">Formas de Pagamento</a></li>
-								<li class="cat_1"><a href="/" class="sf-with-ul">Contato</a></li>
+								<li class="cat_1"><a href="/quemsomos" class="sf-with-ul">Quem Somos</a></li>
+								<li class="cat_1"><a href="/formasdepagamento" class="sf-with-ul">Formas de Pagamento</a></li>
+								<li class="cat_1"><a href="/contato" class="sf-with-ul">Contato</a></li>
 							</ul>
 							
 							<div class="clear"></div>
